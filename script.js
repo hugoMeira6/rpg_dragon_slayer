@@ -1,6 +1,6 @@
 let xp = 0;
-let health = 100;
-let gold = 50;
+let health = 120;
+let gold = 60;
 let currentWeapon = 0;
 let fighting;
 let monsterHealth;
@@ -152,7 +152,7 @@ function buyWeapon() {
       currentWeapon++;
       goldText.innerText = gold;
       let newWeapon = weapons[currentWeapon].name;
-      text.innerText = "Agora você tem uma " + newWeapon + ".";
+      text.innerText = "Agora você tem um (uma) " + newWeapon + ".";
       inventory.push(newWeapon);
       text.innerText += " No seu inventário você tem: " + inventory;
     } else {
@@ -203,7 +203,7 @@ function goFight() {
 function attack() {
   text.innerText = "O (a) " + monsters[fighting].name + " ataca.";
   text.innerText +=
-    " Você ataca com sua " + weapons[currentWeapon].name + ".";
+    " Você ataca com seu (sua) " + weapons[currentWeapon].name + ".";
   health -= getMonsterAttackValue(monsters[fighting].level);
   if (isMonsterHit()) {
     monsterHealth -=
@@ -223,7 +223,7 @@ function attack() {
     }
   }
   if (Math.random() <= 0.1 && inventory.length !== 1) {
-    text.innerText += " Sua " + inventory.pop() + " quebrou.";
+    text.innerText += " Seu (sua) " + inventory.pop() + " quebrou.";
     currentWeapon--;
   }
 }
