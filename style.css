@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(#0a0a23, #282875); 
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  #text {
+    background-color: #0a0a23;
+    color: #ffffff;
+    padding: 10px;
+  }
+  
+  #game {
+    position: relative;
+    max-width: 600px;
+    max-height: 500px;
+    background: linear-gradient(#fdffd9, #f1d989);
+    color: #ffffff;
+    margin: 30px auto 0px;
+    padding: 30px;
+  }
+  
+  #controls,
+  #stats {
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #0a0a23;
+  }
+  
+  #monsterStats {
+    display: none;
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #c70d0d;
+  }
+  
+  .stat {
+    padding-right: 10px;
+  }
+  
+  button {
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+  }
+
+  .credits {
+    color: #fff;
+    margin-left: 40%;
+    margin-top: 20rem
+  }
+
+  .credits_title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
